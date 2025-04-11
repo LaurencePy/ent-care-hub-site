@@ -1,0 +1,48 @@
+.ent-care-hub-text {
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 600;
+    color: #46A9F0;
+    vertical-align: middle;
+  }
+.row.one {
+    padding-bottom: 40px;
+}
+.col-sm-12.col-md-6.about-us {
+    padding-top: 100px;
+}
+
+.box.about-us {
+    background-color: #F4F4F6;
+    border-radius: 20px;
+}
+
+.box-title {
+    font-family: 'Poppins';
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.box-description {
+    font-family: 'Poppins';
+    font-size: 20px;
+    padding-top: 10px;
+    padding: 10px;
+}
+
+.img-fluid.doctor {
+    padding-top: 55px;
+}
+
+
+.row.two{
+    padding-top: 40px;
+    background-color: #AEC1F5;
+    border-radius: 20px;
+    
+}
+
+.box.how-to{
+    background-color: #F4F4F6;
+    border-radius: 20px;
+}
