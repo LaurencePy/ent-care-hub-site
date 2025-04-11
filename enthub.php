@@ -17,10 +17,14 @@
 
   <nav class="navbar bg-light px-4">
   <span class="navbar-brand mb-0 h1">
+    <a href="enthub.php">
     <img src="ent care hub logo.png" alt="logo" width="60" class="me-2" />
     <span class = "ent-care-hub-text">ENT Care Hub</span>
+    </a>
   </span>
+  <a href="consultant-search.php">
   <button class="btn btn-primary ms-auto">Search Consultants</button>
+  </a>
   </nav>
 
   <div class="container">
@@ -54,11 +58,22 @@
           You will then be taken to our search page in order to filter for, and find, the perfect consultant for your needs.
           </div>
       </div>
+    <div class="text-center">
+    <div data-aos="fade-up" data-aos-duration="900">
+      <a href="consultant-search.php">
+    <button class="btn btn-primary ms-auto" id="search-2">Search Consultants</button>
+    </a>
+    </div>
   </div>
-
-
-
+  </div>
 </div>
+
+  <div class="row three">
+    <div class="col-sm-12 col-md-6 how-to">
+
+
+
+  </div>
 
     
 

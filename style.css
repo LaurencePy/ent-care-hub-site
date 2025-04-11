@@ -11,10 +11,14 @@
 .col-sm-12.col-md-6.about-us {
     padding-top: 100px;
 }
+a:link {
+    text-decoration: none;
+  }
 
 .box.about-us {
     background-color: #F4F4F6;
     border-radius: 20px;
+    border: 3px solid #000000;
 }
 
 .box-title {
@@ -40,9 +44,21 @@
     background-color: #AEC1F5;
     border-radius: 20px;
     
-}
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    }
 
 .box.how-to{
     background-color: #F4F4F6;
     border-radius: 20px;
+    padding-bottom: 20px;
+    border: 3px solid #5DC4EA;
 }
+
+#search-2 {
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+  }
