@@ -96,7 +96,7 @@
     <div class="d-flex align-items-start">
       <!-- Avatar on the left -->
       <div class="me-3">
-        <img src="avatar_man.png" class="img-fluid man" alt="avatar man" width="100">
+        <img src="avatar_man.png" class="img-fluid man" alt="avatar man" width="150">
       </div>
 
       <!-- Name and stars on the right -->
