@@ -1,5 +1,9 @@
-.ent-care-hub-text {
+* {
     font-family: 'Poppins';
+  }
+
+
+.ent-care-hub-text {
     font-size: 35px;
     font-weight: 600;
     color: #46A9F0;
@@ -28,13 +32,11 @@ a:link {
 }
 
 .box-title {
-    font-family: 'Poppins';
     font-size: 40px;
     padding-left: 10px;
 }
 
 .box-description {
-    font-family: 'Poppins';
     font-size: 20px;
     padding-top: 10px;
     padding: 10px;
@@ -69,7 +71,7 @@ a:link {
     font-size: 30px;
     border: none;
     border-radius: 5px;
-    
+    margin: 10px;
   }
 
 .row.three {
@@ -78,4 +80,9 @@ a:link {
 
 .box.may {
     padding-top: 40px;
+}
+
+.consultants-page {
+    margin: 40px;
+    background-color: #F4F4F6;
 }

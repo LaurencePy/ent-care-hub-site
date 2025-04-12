@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ENT Care Hub</title>
@@ -24,11 +23,11 @@
     <div class = "call-us ms-auto ">🕿 Call us 01234 567890</div>
   </span>
   <a href="consultant-search.php">
-  <button class="btn btn-primary ms-auto">Search Consultants</button>
+  <button class="btn btn-primary ms-auto btn-lg">Search Consultants</button>
   </a>
   </nav>
 
-  <div class="container">
+  <div class="container consulting-cont">
   <div class="row one">
     <div class="col-sm-12 col-md-6 about-us">
       <div class="box about-us">
@@ -60,9 +59,9 @@
           </div>
       </div>
     <div class="text-center">
-    <div data-aos="fade-up" data-aos-duration="900">
+    <div data-aos="zoom-in" data-aos-duration="900">
       <a href="consultant-search.php">
-    <button class="btn btn-primary ms-auto" id="search-2">Search Consultants</button>
+    <button class="btn btn-primary ms-auto btn-lg" id="search-2">Search Consultants</button>
     </a>
     </div>
   </div>
@@ -73,7 +72,7 @@
 
 <div class="row three">
   <div class="col-sm-12 col-md-6 testimonies mx-auto text-center">
-    <h1>Testimonies</h1>
+    <h1>Testimonials</h1>
     <div data-aos="fade-left" data-aos-duration="800">
       <div class="box may">
         <div class="d-flex align-items-start">
@@ -113,7 +112,7 @@
 
   </div>
 </div>
-
+</div>
 
 
   <script src="aos.js"></script>
