@@ -51,7 +51,7 @@ a:link {
     padding-top: 40px;
     background-color: #AEC1F5;
     border-radius: 20px;
-    
+    margin: 20px;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
@@ -76,6 +76,7 @@ a:link {
 
 .row.three {
     padding-top: 20px;
+    margin: 20px;
 }
 
 .box.may {
@@ -83,6 +84,7 @@ a:link {
 }
 
 .consultants-page {
-    margin: 40px;
+    margin-top: 40px;
     background-color: #F4F4F6;
+    
 }

@@ -20,14 +20,14 @@
     <img src="ent care hub logo.png" alt="logo" width="60" class="me-2" />
     <span class = "ent-care-hub-text">ENT Care Hub</span>
     </a>
-    <div class = "call-us ms-auto ">🕿 Call us 01234 567890</div>
+    <div class = "call-us ms-auto ">🕿 Call us on 01234 567890</div>
   </span>
-  <a href="consultant-search.php">
+  <a href="search-page.html">
   <button class="btn btn-primary ms-auto btn-lg">Search Consultants</button>
   </a>
   </nav>
 
-  <div class="container consulting-cont">
+  <div class="container-fluid consulting-cont">
   <div class="row one">
     <div class="col-sm-12 col-md-6 about-us">
       <div class="box about-us">
@@ -60,7 +60,7 @@
       </div>
     <div class="text-center">
     <div data-aos="zoom-in" data-aos-duration="900">
-      <a href="consultant-search.php">
+      <a href="search-page.html">
     <button class="btn btn-primary ms-auto btn-lg" id="search-2">Search Consultants</button>
     </a>
     </div>
