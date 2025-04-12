@@ -21,6 +21,7 @@
     <img src="ent care hub logo.png" alt="logo" width="60" class="me-2" />
     <span class = "ent-care-hub-text">ENT Care Hub</span>
     </a>
+    <div class = "call-us ms-auto ">🕿 Call us 01234 567890</div>
   </span>
   <a href="consultant-search.php">
   <button class="btn btn-primary ms-auto">Search Consultants</button>
@@ -48,7 +49,7 @@
   </div>
 
 
-
+  <div data-aos="fade-up" data-aos-duration="800">
   <div class="row two">
     <div class="col-sm-12 col-md-6 how-to">
       <div class="box how-to">
@@ -67,17 +68,54 @@
   </div>
   </div>
 </div>
+</div>
 
-  <div class="row three">
-    <div class="col-sm-12 col-md-6 how-to">
 
+<div class="row three">
+  <div class="col-sm-12 col-md-6 testimonies mx-auto text-center">
+    <h1>Testimonies</h1>
+    <div data-aos="fade-left" data-aos-duration="800">
+      <div class="box may">
+        <div class="d-flex align-items-start">
+          <div class="me-3">
+            <img src="avatar_woman.png" class="img-fluid woman" alt="avatar woman" width="100">
+          </div>
+
+          <div>
+            <div class="box-title mb-2">May ⭐⭐⭐⭐⭐</div>
+            <div class="box-description">
+              ENT Care Hub allowed me to easily find the perfect Consultant!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-right" data-aos-duration="800">
+  <div class="box jeremy mt-4">
+    <div class="d-flex align-items-start">
+      <!-- Avatar on the left -->
+      <div class="me-3">
+        <img src="avatar_man.png" class="img-fluid man" alt="avatar man" width="100">
+      </div>
+
+      <!-- Name and stars on the right -->
+      <div>
+        <div class="box-title mb-2">Jeremy ⭐⭐⭐⭐⭐</div>
+        <div class="box-description">
+          Thanks to the team at ENT Care Hub I was able to find the professional help I urgently needed
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
   </div>
+</div>
 
-    
 
-  </div>
+
   <script src="aos.js"></script>
   <script>
     AOS.init();

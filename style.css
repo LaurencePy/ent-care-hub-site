@@ -15,6 +15,12 @@ a:link {
     text-decoration: none;
   }
 
+
+.btn.btn-primary.ms-auto:hover {
+    -webkit-transform: scale(1.1);
+    background: #34EBD1;
+}
+
 .box.about-us {
     background-color: #F4F4F6;
     border-radius: 20px;
@@ -49,10 +55,13 @@ a:link {
     min-height: 80vh;
     }
 
+.col-sm-12 col-md-6 how-to {
+    padding-bottom: 100px;
+}
 .box.how-to{
     background-color: #F4F4F6;
     border-radius: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border: 3px solid #5DC4EA;
 }
 
@@ -60,5 +69,13 @@ a:link {
     font-size: 30px;
     border: none;
     border-radius: 5px;
-    padding-top: 10px;
+    
   }
+
+.row.three {
+    padding-top: 20px;
+}
+
+.box.may {
+    padding-top: 40px;
+}
