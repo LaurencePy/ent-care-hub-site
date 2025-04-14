@@ -11,8 +11,12 @@
   }
 .row.one {
     padding-bottom: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-.col-sm-12.col-md-6.about-us {
+
+.about-us {
     padding-top: 100px;
 }
 a:link {
@@ -28,7 +32,7 @@ a:link {
 .box.about-us {
     background-color: #F4F4F6;
     border-radius: 20px;
-    border: 3px solid #000000;
+    border: 3px solid #5DC4EA;
 }
 
 .box-title {
@@ -43,21 +47,20 @@ a:link {
 }
 
 .img-fluid.doctor {
-    padding-top: 55px;
+    padding-top: 95px;
 }
 
 
 .row.two{
+    display: flex;
     padding-top: 40px;
     background-color: #AEC1F5;
-    border-radius: 20px;
-    margin: 20px;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
     }
 
-.col-sm-12 col-md-6 how-to {
+.how-to {
     padding-bottom: 100px;
 }
 .box.how-to{
@@ -67,12 +70,24 @@ a:link {
     border: 3px solid #5DC4EA;
 }
 
+#how-to-use {
+    scale: 80%;
+}
+
 #search-2 {
     font-size: 30px;
     border: none;
     border-radius: 5px;
     margin: 10px;
   }
+
+#map { 
+    height: 400px;
+    border-radius: 20px;
+    margin-bottom:40px;
+ }
+
+
 
 .row.three {
     padding-top: 20px;
@@ -86,5 +101,27 @@ a:link {
 .consultants-page {
     margin-top: 40px;
     background-color: #F4F4F6;
+    
+}
+
+#consultant_count_num {
+    color: #46A9F0;
+}
+
+#clinics_count_num {
+    color: #46A9F0;
+}
+
+#locations-box {
+    background-color: #F4F4F6;
+    border-radius: 20px;
+    border: 3px solid #5DC4EA;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#locations-title {
+    display: flex;
+    justify-content: center;
     
 }

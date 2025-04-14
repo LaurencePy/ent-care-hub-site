@@ -33,7 +33,7 @@
       <div class="box searching-box">
         <div class="box-title" id="find-ent">Find an ENT Specialist</div>
         <div class="box-description" id="output">
-          search x consultants from y clinics
+          search   consultants from   clinics
           </div>
 
           <script>
@@ -46,31 +46,15 @@
                 }
               })
               .then(response => {
+                console.log("JSON Response:", response);
                 const outputDiv = document.getElementById("output");
-                
-                const consultantsCount = response.consultantsCount;  // Get count of consultants
-                const clinicsCount = response.clinicsCount;  // Get count of clinics
-          
-                // Replace x and y in the text
-                outputDiv.innerHTML = `search ${consultantsCount} consultants from ${clinicsCount} clinics`;
-          
-                // If you want to display rows from the clinics table
-                if (response.data.length !== 0) {
-                  // Dynamically create a list or display rows from the clinics table
-                  outputDiv.innerHTML += response.data.map(item => {
-                    return `
-                      <div class="clinic-row">
-                        ${Object.keys(item).map(key => {
-                          return `<strong>${key}:</strong> ${item[key]}<br>`;
-                        }).join('')}
-                      </div>
-                    `;
-                  }).join('');
-                } else {
-                  outputDiv.innerText += " No data found.";
-                }
+                const consultantsCount = response.consultantsCount;
+                const clinicsCount = response.clinicsCount;
+                outputDiv.innerHTML = `search <span id="consultant_count_num">${consultantsCount}</span> consultants from <span id="clinics_count_num">${clinicsCount}</span> clinics`;
               })
+
               .catch(error => {
+                
                 document.getElementById("output").innerText = "Error: " + error.message;
               });
           </script>
