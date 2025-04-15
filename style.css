@@ -9,7 +9,7 @@
     color: #46A9F0;
     vertical-align: middle;
   }
-.row.one {
+#main-row-one {
     padding-bottom: 40px;
     display:flex;
     align-items: center;
@@ -51,7 +51,7 @@ a:link {
 }
 
 
-.row.two{
+#main-row-two {
     display: flex;
     padding-top: 40px;
     background-color: #AEC1F5;
@@ -89,7 +89,7 @@ a:link {
 
 
 
-.row.three {
+#main-row-three {
     padding-top: 20px;
     margin: 20px;
 }
@@ -98,10 +98,8 @@ a:link {
     padding-top: 40px;
 }
 
-.consultants-page {
-    margin-top: 40px;
+#consultants-area {
     background-color: #F4F4F6;
-    
 }
 
 #consultant_count_num {
@@ -125,3 +123,16 @@ a:link {
     justify-content: center;
     
 }
+
+#map-two {
+    height: 300px;
+    border-radius: 20px;
+    width: 500px;
+    margin: 20px;
+
+ }
+
+ #how-to-two {
+    margin: 20px;
+    margin-top: 70px;
+ }

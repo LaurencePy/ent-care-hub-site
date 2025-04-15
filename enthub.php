@@ -35,7 +35,7 @@
   </nav>
 
   <div class="container-fluid consulting-cont">
-  <div class="row one">
+  <div class="row one" id = "main-row-one">
     <div class="col-sm-12 col-md-6 about-us">
       <div class="box about-us">
         <div class="box-title">About Us</div>
@@ -56,7 +56,7 @@
 
 
   <div data-aos="fade-up" data-aos-duration="800">
-  <div class="row two">
+  <div class="row two" id="main-row-two">
     
   <div class="col-sm-12 col-md-6 find-us">
     <div class = "box locations"id="locations-box">
@@ -110,7 +110,7 @@
 </div>
 
 
-<div class="row three">
+<div class="row three" id="main-row-three">
   <div class="col-sm-12 col-md-6 testimonies mx-auto text-center">
     <h1>Testimonials</h1>
     <div data-aos="fade-left" data-aos-duration="800">
