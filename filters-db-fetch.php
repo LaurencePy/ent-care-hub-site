@@ -17,11 +17,23 @@ if ($resultSpecialities && $resultSpecialities->num_rows > 0) {
     }
 }
 
+$sqlClinics = "SELECT name FROM clinics";
+$resultClinics = mysqli_query($conn, $sqlClinics);
+$clinics = [];
+
+if ($resultClinics && $resultClinics->num_rows > 0) {
+    while ($row = $resultClinics->fetch_assoc()) {
+        $clinics[] = $row['name'];
+    }
+}
+
+
 
 mysqli_close($conn);
 
 $response = [
-    'resultSpecialities' => $resultSpecialities
+    'resultSpecialities' => $specialities,
+    'resultClinics' => $clinics
 ];
 
 echo json_encode($response);
