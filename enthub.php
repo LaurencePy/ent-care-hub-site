@@ -41,7 +41,7 @@
         <div class="box-title">About Us</div>
         <div class="box-description">
           ENT Care Hub is a leading private healthcare provider in the East Midlands, specialising in ENT (Ear, Nose,
-          and Throat) health services. With a diverse team of highly skilled consultants across multiple specialties, ENT
+          and Throat) health services. With a diverse team of highly skilled consultants across multiple specialities, ENT
           Care Hub aims to provide high-quality healthcare through its network of clinics.
         </div>
       </div>
@@ -64,7 +64,7 @@
     </div>
     <div id="map">
     <script>
-    var map = L.map('map').setView([52.7650253, -1.2320904], 9);
+    var map = L.map('map').setView([52.7650253, -1.2320904], 8);
 
     // map set to view from Loughborough University starting point showing all clinics
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

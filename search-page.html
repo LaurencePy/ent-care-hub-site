@@ -37,16 +37,14 @@
   <div class="col-sm-12 col-md-6 map-two-col">
   <div id="map-two">
     <script>
-    var map = L.map('map-two').setView([52.7650253, -1.2320904], 9);
+    var map = L.map('map-two').setView([52.7650253, -1.2320904], 8);
 
-// Add OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
     var marker;
 
-    // When location is found
     map.on('locationfound', function(ev) {
         if (!marker) {
             marker = L.marker(ev.latlng).addTo(map);
@@ -58,12 +56,10 @@
         map.setView(ev.latlng, 13);
     });
 
-    // When location is not found
     map.on('locationerror', function(e) {
         alert("Could not find your location.");
     });
 
-    // Start locating the user
     map.locate({ setView: false, maxZoom: 16 });
 
     
@@ -100,7 +96,7 @@
   <div class="container-fluid consultants-page" id="consultants-area">
     
   <div class="row search-two" id="search-two">
-    <div class="col searching">
+    <div class="col-sm-12 col-md-6 searching">
       <div class="box searching-box">
         <div class="box-title" id="find-ent">Find an ENT Specialist</div>
         <div class="box-description" id="output">
@@ -108,7 +104,7 @@
           </div>
 
           <script>
-            fetch('db-fetch.php')
+            fetch('clinics-consultants-db-fetch.php')
               .then(res => {
                 if (res.ok) {
                   return res.json();
@@ -137,9 +133,41 @@
       </div>
     </div>
 </div>
-  
+
+<div class="row search-three" id="search-three">
+<div class="col-sm-12 col-md-6 speciality" id="speciality">
+
+<script>
+  fetch('filters-db-fetch.php')
+    .then(res => {
+      if (res.ok) {
+        return res.json();
+      } else {
+        throw new Error("Fetch failed");
+      }
+    })
+    .then(response => {
+      console.log("JSON Response:", response);
+      const resultSpecialities = response.resultSpecialities;
+    })
+
+    .catch(error => {
+      
+      document.getElementById("speciality").innerText = "Error: " + error.message;
+    });
+    
+  </script>
+
+  <select class="form-select" aria-label="Default select example" id="select-box">
+    <option selected>Speciality</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
 
 
+</div>
+</div>
   </div>
   </body>
 </html>
