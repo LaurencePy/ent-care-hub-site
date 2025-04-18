@@ -43,6 +43,25 @@ function fillFilters() {
     });
 }
 
+document.getElementById('consultant-search-button').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  const speciality = document.getElementById("speciality-select").value;
+  const clinic = document.getElementById("clinic-select").value;
+  const avgScore = document.getElementById("avg-score-select").value;
+  const fee = document.getElementById("fee-slider-select").value;
+  const date = document.getElementById("date").value;
+
+  const queryParams = new URLSearchParams({
+    speciality,
+    clinic,
+    score: avgScore,
+    fee: fee,
+    date
+  });
+
+  window.location.href = `search-results.php?${queryParams.toString()}`;
+});
 
 
 

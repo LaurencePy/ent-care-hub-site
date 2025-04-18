@@ -29,7 +29,7 @@
     </a>
     <div class = "call-us ms-auto ">🕿 Call us on 01234 567890</div>
   </span>
-  <a href="search-page.html">
+  <a href="consultant-search.php">
   <button class="btn btn-primary ms-auto btn-lg">Search Consultants</button>
   </a>
   </nav>
@@ -98,7 +98,7 @@
       </div>
     <div class="text-center">
     <div data-aos="zoom-in" data-aos-duration="900">
-      <a href="search-page.html">
+      <a href="consultant-search.php">
     <button class="btn btn-primary ms-auto btn-lg" id="search-2">Search Consultants</button>
     </a>
     </div>
