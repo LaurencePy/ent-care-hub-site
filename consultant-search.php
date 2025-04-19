@@ -133,7 +133,14 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
      crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="aos.css">
-    <script defer src="app.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        canvas {
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+    </style>
 </head>
 
 
@@ -201,7 +208,7 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
         </div>
     </div>
 
-  </div>
+</div>
 
 
 </div>
@@ -357,7 +364,7 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
         <p><strong>Fee:</strong> £<?= number_format($c['consultation_fee'], 2) ?></p>
         <p><strong>Average Rating:</strong> <?= number_format($c['avg_rating'] ?? 0, 1) ?></p>
         
-        <!-- Available Days -->
+
         <p class="mb-1"><strong>Available Days:</strong></p>
         <div class="d-flex flex-wrap gap-1 mb-2">
           <?php foreach ($availableDays as $day): ?>
@@ -365,7 +372,7 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
           <?php endforeach; ?>
         </div>
         
-        <!-- Availability Status -->
+
         <?php if ($available_date !== ''): ?>
           <p class="mb-0"><strong>Availability on <?= htmlspecialchars($available_date) ?>:</strong> 
             <span class="<?= $availabilityClass ?>"><?= $availabilityText ?></span>
@@ -380,7 +387,7 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>AOS.init();</script>
   <script>
-console.log("Debugging Consultant Search:");
+console.log("Consultant search: ");
 console.log("Selected Specialty: ", "<?= $speciality ?>");
 console.log("Selected Clinic: ", "<?= $clinic ?>");
 console.log("Min Score: ", "<?= $min_score ?>");
@@ -396,7 +403,6 @@ console.log("Consultant #<?= $index+1 ?>:", {
 });
 <?php endforeach; ?>
 
-console.log("SQL Query:", <?= json_encode($query) ?>);
 </script>
 </body>
 </html>
