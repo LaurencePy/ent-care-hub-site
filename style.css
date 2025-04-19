@@ -166,3 +166,15 @@ a:link {
 
  }
 
+#filter-search {
+    margin-top: 48px;
+}
+
+#charts-page-button {
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+#filter-row {
+    margin-left: 4px;
+}

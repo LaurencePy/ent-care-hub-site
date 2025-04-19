@@ -15,7 +15,7 @@
      crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="aos.css">
-    <script defer src="app.js"></script>
+    <script src="app.js"></script>
   </head>
 
   <body>

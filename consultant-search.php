@@ -230,7 +230,11 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
         <div class="box-description" id="output">
           search   consultants from   clinics
           </div>
-
+        <div id="charts-page-button">
+        <a href="charts.html">
+        <button type="submit" class="btn btn-primary">View Charts for statistics</button>
+        </a>
+        </div>
           <script>
             fetch('clinics-consultants-db-fetch.php')
               .then(res => {
@@ -260,8 +264,8 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
 
       </div>
 
-    <form class="row g-3 mb-5" method="GET">
-      <div class="col-md-3">
+    <form class="row g-3 mb-5" method="GET" id="filter-row">
+      <div class="col-md-2">
         <label class="form-label">Speciality</label>
         <select name="speciality" class="form-select">
           <option value="">All</option>
@@ -273,7 +277,7 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
         </select>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-2">
         <label class="form-label">Clinic</label>
         <select name="clinic" class="form-select">
           <option value="">All</option>
@@ -301,7 +305,8 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
             min="<?= date('Y-m-d') ?>" required>
         </div>
 
-      <div class="col-12 text-end">
+      <div class="col-md-2" id="filter-search">
+
         <button type="submit" class="btn btn-primary">Search</button>
       </div>
     </form>
