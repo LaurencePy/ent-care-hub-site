@@ -357,7 +357,7 @@ $clinics = $conn->query("SELECT id, name FROM clinics")->fetch_all(MYSQLI_ASSOC)
                 $availabilityClass = "text-warning";
             }
         } catch (Exception $e) {
-            console.error("Error with date");
+            error_log("Error with date");
         }
     }
   ?>
